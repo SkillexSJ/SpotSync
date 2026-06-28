@@ -39,7 +39,7 @@ func main() {
 
 	pgDB, err := db.DB()
 	if err != nil {
-		log.Fatal("Failed to get underlying sql.DB: ", err)
+		log.Fatal("Failed to get sql.DB: ", err)
 	}
 	if err := pgDB.Ping(); err != nil {
 		log.Fatal("Database ping failed: ", err)
