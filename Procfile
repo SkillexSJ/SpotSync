@@ -1,1 +1,1 @@
-web: SpotSync
+web: cmd
