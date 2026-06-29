@@ -65,6 +65,12 @@ func main() {
 	zoneHandler := handler.NewZoneHandler(zoneService)
 	reservationHandler := handler.NewReservationHandler(reservationService)
 
+	e.GET("/api/v1", func(c *echo.Context) error {
+		return c.JSON(http.StatusOK, map[string]string{
+			"message": "Welcome to SportSync",
+		})
+	})
+
 	// Health Check
 	e.GET("/health", func(c *echo.Context) error {
 		return c.JSON(http.StatusOK, map[string]string{
