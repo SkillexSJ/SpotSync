@@ -21,7 +21,7 @@
 ## 🌐 Live URL
 
 ```
-https://spotsync.onrender.com
+https://spot-sync-golang-be8141cedb62.herokuapp.com/api/v1
 ```
 
 > Hit the root URL to verify the API is live:
